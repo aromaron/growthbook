@@ -11,8 +11,8 @@ services:
       - mongo
     environment:
       - MONGODB_URI=mongodb://root:password@mongo:27017/
-      - API_HOST:https://growthbook-production-api.up.railway.app.up.railway.app
-      - APP_ORIGIN:https://growthbook-production.up.railway.app.up.railway.app
+      - API_HOST:https://growthbook-production-api.up.railway.app
+      - APP_ORIGIN:https://growthbook-production.up.railway.app
     volumes:
       - uploads:/usr/local/src/app/packages/back-end/uploads
 volumes:

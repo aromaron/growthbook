@@ -18,7 +18,7 @@ services:
       # Proxy settings
       - PROXY_ENABLED=1
       - PROXY_HOST_INTERNAL=http://proxy:3300
-      - PROXY_HOST_PUBLIC=https://gb-test-app.fly.dev:3300
+      - PROXY_HOST_PUBLIC=https://growthbook-production-api.up.railway.app:3300
       # Change this to something secure in production!
       - SECRET_API_KEY=dev
     volumes:
@@ -31,7 +31,7 @@ services:
     depends_on:
       - growthbook
     environment:
-      - GROWTHBOOK_API_HOST=growthbook-production-api.up.railway.app.up.railway.app
+      - GROWTHBOOK_API_HOST=https://growthbook-production-api.up.railway.app
       # This must match the SECRET_API_KEY above
       - SECRET_API_KEY=dev
 
